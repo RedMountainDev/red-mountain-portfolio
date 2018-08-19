@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global sass to this file, and also import other style files */
+@import "assets/sass/utils/mixins";
+@import "assets/sass/utils/variables";
+
+@import "assets/sass/base/reset";
+@import "assets/sass/base/typography";
+@import "assets/sass/base/animations";
+
+@import "assets/sass/layout/header";
+@import "assets/sass/layout/grid";
+@import "assets/sass/layout/footer";
+
+@import "assets/sass/pages/home";
+
