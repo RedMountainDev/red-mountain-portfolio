@@ -7,13 +7,19 @@ import {MainContentComponent} from './components/main-content/main-content.compo
 import {AboutComponent} from './components/about/about.component';
 import {RouterModule} from '@angular/router';
 import {routes} from './app.routes';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     MainContentComponent,
-    AboutComponent
+    AboutComponent,
+    ExperienceComponent,
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -21,6 +21,12 @@
 
   &:hover {
     color: $color-white;
+    background-position: -100%;
 
+  }
+
+  &--active {
+    color: $color-white;
+    background-position: -100%;
   }
 }

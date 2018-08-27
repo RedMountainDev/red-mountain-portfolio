@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
+import {log} from 'util';
 
 @Component({
   selector: 'app-navigation',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+
+  routerOptions = {exact: true};
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

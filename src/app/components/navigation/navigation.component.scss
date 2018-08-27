@@ -23,27 +23,25 @@
   }
 
   &__list-item {
+    user-select: none;
+    outline: 0;
     padding: 1rem 3rem;
     font-size: 2rem;
     font-weight: 500;
     cursor: pointer;
 
-    &:hover {
-      background-position: -100%;
-    }
-
-    &--welcome {
+    &-welcome {
       @include nav-transition($color-midnight-blue);
     }
-    &--experience {
+    &-experience {
       @include nav-transition($color-fire-brick-dark-1);
 
     }
-    &--projects {
+    &-projects {
       @include nav-transition($color-secondary-1-2);
 
     }
-    &--contact {
+    &-contact {
       @include nav-transition($color-complement-0)
     }
   }

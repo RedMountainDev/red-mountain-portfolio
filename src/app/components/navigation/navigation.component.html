@@ -3,9 +3,18 @@
     <img src="../../../assets/images/logo/Volcanic.svg" alt="Red Mountain Logo" class="navigation__logo">
   </div>
   <ul class="navigation__list">
-    <li class="navigation__list-item navigation__list-item--welcome">About</li>
-    <li class="navigation__list-item navigation__list-item--experience">Experience</li>
-    <li class="navigation__list-item navigation__list-item--projects">Projects</li>
-    <li class="navigation__list-item navigation__list-item--contact">Contact me</li>
+    <li class="navigation__list-item navigation__list-item-welcome" routerLink="/"
+        routerLinkActive="navigation__list-item-welcome--active"
+        [routerLinkActiveOptions]="routerOptions">About
+    </li>
+    <li class="navigation__list-item navigation__list-item-experience"
+        routerLinkActive="navigation__list-item-experience--active" routerLink="/experience">Experience
+    </li>
+    <li class="navigation__list-item navigation__list-item-projects"
+        routerLinkActive="navigation__list-item-projects--active" routerLink="/projects">Projects
+    </li>
+    <li class="navigation__list-item navigation__list-item-contact"
+        routerLinkActive="navigation__list-item-contact--active" routerLink="/contact">Contact me
+    </li>
   </ul>
 </nav>
