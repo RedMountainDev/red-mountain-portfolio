@@ -25,19 +25,26 @@
   &__list-item {
     padding: 1rem 3rem;
     font-size: 2rem;
-    color: $color-midnight-blue;
+    font-weight: 500;
     cursor: pointer;
-    background-image: linear-gradient(to right, transparent 0%, transparent 50%, $color-midnight-blue 50%);
-    background-size: 200%;
-    transition: all .5s;
-
-    &--active {
-      color: $color-fire-brick;
-    }
 
     &:hover {
       background-position: -100%;
-      color: $color-white;
+    }
+
+    &--welcome {
+      @include nav-transition($color-midnight-blue);
+    }
+    &--experience {
+      @include nav-transition($color-fire-brick-dark-1);
+
+    }
+    &--projects {
+      @include nav-transition($color-secondary-1-2);
+
+    }
+    &--contact {
+      @include nav-transition($color-complement-0)
     }
   }
 }
