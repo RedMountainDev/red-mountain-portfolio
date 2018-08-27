@@ -1,0 +1,63 @@
+.section {
+  padding: 4rem;
+  height: 100%;
+  &__content {
+
+  }
+
+  &__header {
+    color: $color-white;
+    padding: 2rem;
+    &--about {
+      background-color: $color-midnight-blue;
+    }
+    &--experience {
+      background-color: $color-fire-brick-dark-1;
+    }
+    &--projects {
+      background-color: $color-secondary-1-2;
+    }
+
+    &--contact {
+      background-color: $color-complement-0;
+    }
+  }
+
+  &__background {
+    &--about {
+
+    }
+    &--experience {
+      background-image: url("src/assets/images/backgrounds/emile-perron-190221-unsplash.jpg");
+      background-size: cover;
+    }
+    &--projects {
+
+    }
+    &--contact {
+
+    }
+  }
+
+  &__overlay {
+    min-height: 100%;
+    background-color: rgba($color-white, 0.3);
+  }
+  &__paragraph {
+    margin: 3rem auto;
+    font-size: 2.5rem;
+    line-height: 1.7;
+    padding: 2.5rem;
+    background-color: $color-white;
+    color: darken($color-grey-dark-2, 10);
+    border: 1px solid $color-grey;
+    border-radius: 1rem;
+
+    & p {
+      &:not(:last-child) {
+        margin-bottom: 2.5rem;
+      }
+
+    }
+  }
+}

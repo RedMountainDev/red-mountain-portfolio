@@ -27,7 +27,6 @@
     outline: 0;
     padding: 1rem 3rem;
     font-size: 2rem;
-    font-weight: 500;
     cursor: pointer;
 
     &-welcome {
@@ -35,7 +34,6 @@
     }
     &-experience {
       @include nav-transition($color-fire-brick-dark-1);
-
     }
     &-projects {
       @include nav-transition($color-secondary-1-2);
