@@ -1,0 +1,13 @@
+<section [ngSwitch]="sectionTitle.toLowerCase()" class="section section__background{{sectionClass}}">
+  <div class="section__overlay">
+    <header class="section__header section__header{{sectionClass}}">
+      <h1 class="heading-primary">
+        {{sectionTitle}}
+      </h1>
+    </header>
+    <app-section-about *ngSwitchCase="'about'"></app-section-about>
+    <app-section-experience *ngSwitchCase="'experience'"></app-section-experience>
+    <app-section-projects *ngSwitchCase="'projects'"></app-section-projects>
+    <app-section-contact *ngSwitchCase="'contact'"></app-section-contact>
+  </div>
+</section>

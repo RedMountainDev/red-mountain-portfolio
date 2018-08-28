@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ESectionContentType} from '../../../../enums/ESectionContentType';
 
 @Component({
   selector: 'app-about',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
+  sectionType: ESectionContentType;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
