@@ -1,11 +1,11 @@
 // ROUTES
 
 import {Route, Routes} from '@angular/router';
-import {AboutComponent} from './components/about/about.component';
-import {MainContentComponent} from './components/main-content/main-content.component';
-import {ExperienceComponent} from './components/experience/experience.component';
-import {ContactComponent} from './components/contact/contact.component';
-import {ProjectsComponent} from './components/projects/projects.component';
+import {AboutComponent} from './components/main-components/about/about.component';
+import {MainContentComponent} from './components/main-components/main-content/main-content.component';
+import {ExperienceComponent} from './components/main-components/experience/experience.component';
+import {ContactComponent} from './components/main-components/contact/contact.component';
+import {ProjectsComponent} from './components/main-components/projects/projects.component';
 
 const aboutRoute: Route = {component: AboutComponent, path: ''};
 const experienceRoute: Route = {component: ExperienceComponent, path: 'experience'};
