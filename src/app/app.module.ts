@@ -15,6 +15,7 @@ import { SectionAboutComponent } from './components/section-components/section-a
 import { SectionExperienceComponent } from './components/section-components/section-experience/section-experience.component';
 import { SectionProjectsComponent } from './components/section-components/section-projects/section-projects.component';
 import { SectionContactComponent } from './components/section-components/section-contact/section-contact.component';
+import { ExperienceCategoryComponent } from './components/content-components/experience-category/experience-category.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SectionContactComponent } from './components/section-components/section
     SectionAboutComponent,
     SectionExperienceComponent,
     SectionProjectsComponent,
-    SectionContactComponent
+    SectionContactComponent,
+    ExperienceCategoryComponent
   ],
   imports: [
     BrowserModule,
