@@ -10,6 +10,7 @@ export class ExperienceService {
   constructor() {
   }
 
+  // Gets Experience from the constants folder
   getExperience(): IExperienceCategory[] {
     return XpCategories;
   }

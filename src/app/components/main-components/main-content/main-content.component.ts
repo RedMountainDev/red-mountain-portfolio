@@ -7,6 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class MainContentComponent implements OnInit {
 
+  // Component contains main sections and content
   constructor() {
   }
 

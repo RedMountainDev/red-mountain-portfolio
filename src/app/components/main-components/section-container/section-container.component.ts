@@ -6,6 +6,8 @@ import {ESectionContentType} from '../../../../enums/ESectionContentType';
   templateUrl: './section-container.component.html',
   styleUrls: ['./section-container.component.scss']
 })
+
+// Container for all sections
 export class SectionContainerComponent implements OnInit {
 
   @Input()
