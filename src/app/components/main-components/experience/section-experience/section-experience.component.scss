@@ -1,0 +1,33 @@
+@import "../../../../../assets/sass/utils/main-utils";
+
+:host {
+  padding: 1rem;
+}
+
+.experience-content {
+  margin: 3rem 2rem;
+
+  &__heading {
+    color: $color-white;
+    background-color: $color-fire-brick-dark-1;
+    width: 30rem;
+  }
+
+  &__container {
+    background-color: $color-grey-light-1;
+  }
+  &__pin {
+    margin: 2rem;
+    min-width: 15rem;
+    display: inline-block;
+
+    &-img {
+      height: 15rem;
+    }
+
+    &-text {
+      text-align: center;
+      font-size: 1.6rem;
+    }
+  }
+}

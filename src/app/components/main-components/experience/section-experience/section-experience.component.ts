@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IExperienceCategory } from '../../../../../interfaces/IExperienceCategory';
+import { ExperienceService } from '../../../../services/experience.service';
 
 @Component({
   selector: 'app-section-experience',
@@ -6,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section-experience.component.scss']
 })
 export class SectionExperienceComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  experience: IExperienceCategory[];
+  constructor(private xp: ExperienceService) {
+    this.experience = xp.getExperience();
   }
 
+  ngOnInit() {}
 }

@@ -1,5 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {ESectionContentType} from '../../../../enums/ESectionContentType';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-section-container',
@@ -9,17 +8,13 @@ import {ESectionContentType} from '../../../../enums/ESectionContentType';
 
 // Container for all sections
 export class SectionContainerComponent implements OnInit {
-
   @Input()
   sectionTitle: string;
 
   @Input()
   sectionClass: string;
 
-  constructor() {
-  }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

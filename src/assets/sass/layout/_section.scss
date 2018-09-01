@@ -1,13 +1,19 @@
 .section {
   padding: 4rem;
   height: 100%;
-  &__content {
-
-  }
+  overflow: auto;
 
   &__header {
-    color: $color-white;
-    padding: 2rem;
+
+    &--primary {
+      color: $color-white;
+      padding: 2rem;
+    }
+
+    &--secondary {
+      padding: 2rem;
+    }
+
     &--about {
       background-color: $color-midnight-blue;
     }
@@ -23,19 +29,20 @@
     }
   }
 
+  &__content {
+    margin: 3rem 2rem;
+  }
+
   &__background {
     &--about {
-
     }
     &--experience {
-      background-image: url("src/assets/images/backgrounds/emile-perron-190221-unsplash.jpg");
+      background-image: url('src/assets/images/backgrounds/emile-perron-190221-unsplash.jpg');
       background-size: cover;
     }
     &--projects {
-
     }
     &--contact {
-
     }
   }
 
@@ -57,7 +64,6 @@
       &:not(:last-child) {
         margin-bottom: 2.5rem;
       }
-
     }
   }
 }

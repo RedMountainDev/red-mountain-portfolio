@@ -1,8 +1,8 @@
-import {IExperienceArea} from '../../../../interfaces/IExperienceArea';
+import { IExperienceArea } from '../../../../interfaces/IExperienceArea';
 
 export const gulp: IExperienceArea = {
   name: 'Gulp',
-  logo: '',
+  logo: '../../../../assets/images/programming-logos/gulp-plain.svg',
   description: '',
   url: ''
 };

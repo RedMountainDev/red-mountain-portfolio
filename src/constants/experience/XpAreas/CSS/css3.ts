@@ -1,8 +1,8 @@
-import {IExperienceArea} from '../../../../interfaces/IExperienceArea';
+import { IExperienceArea } from '../../../../interfaces/IExperienceArea';
 
 export const css3: IExperienceArea = {
   name: 'CSS3',
-  logo: '',
+  logo: '../../../../assets/images/programming-logos/css3-original.svg',
   description: '',
   url: ''
 };

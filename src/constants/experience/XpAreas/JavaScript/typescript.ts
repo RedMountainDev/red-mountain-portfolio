@@ -1,8 +1,8 @@
-import {IExperienceArea} from '../../../../interfaces/IExperienceArea';
+import { IExperienceArea } from '../../../../interfaces/IExperienceArea';
 
 export const typescript: IExperienceArea = {
   name: 'TypeScript',
-  logo: '',
+  logo: '../../../../assets/images/programming-logos/typescript-original.svg',
   description: '',
   url: ''
 };

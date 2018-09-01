@@ -1,8 +1,8 @@
-import {IExperienceArea} from '../../../../interfaces/IExperienceArea';
+import { IExperienceArea } from '../../../../interfaces/IExperienceArea';
 
 export const csharp: IExperienceArea = {
   name: 'C#',
-  logo: '',
+  logo: '../../../../assets/images/programming-logos/csharp-original.svg',
   description: '',
   url: ''
 };

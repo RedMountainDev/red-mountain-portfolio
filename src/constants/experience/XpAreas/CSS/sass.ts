@@ -1,8 +1,8 @@
-import {IExperienceArea} from '../../../../interfaces/IExperienceArea';
+import { IExperienceArea } from '../../../../interfaces/IExperienceArea';
 
 export const sass: IExperienceArea = {
   name: 'Sass',
-  logo: '',
+  logo: '../../../../assets/images/programming-logos/sass-original.svg',
   description: '',
   url: ''
 };

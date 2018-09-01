@@ -1,8 +1,8 @@
-import {IExperienceArea} from '../../../../interfaces/IExperienceArea';
+import { IExperienceArea } from '../../../../interfaces/IExperienceArea';
 
 export const express: IExperienceArea = {
   name: 'Express',
-  logo: '',
+  logo: '../../../../assets/images/programming-logos/express-original.svg',
   description: '',
   url: ''
 };
