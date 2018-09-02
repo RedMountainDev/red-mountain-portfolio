@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { IExperienceCategory } from '../../../../../interfaces/IExperienceCategory';
-import { ExperienceService } from '../../../../services/experience.service';
+import {Component, OnInit} from '@angular/core';
+import {IExperienceCategory} from '../../../../../interfaces/IExperienceCategory';
+import {ExperienceService} from '../../../../services/experience.service';
 
 @Component({
   selector: 'app-section-experience',
@@ -9,9 +9,18 @@ import { ExperienceService } from '../../../../services/experience.service';
 })
 export class SectionExperienceComponent implements OnInit {
   experience: IExperienceCategory[];
+
   constructor(private xp: ExperienceService) {
     this.experience = xp.getExperience();
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
+
+  Navigate(url: string) {
+    if (!url) {
+      return;
+    }
+    window.open(url, '_blank');
+  }
 }

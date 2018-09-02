@@ -1,5 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 import {AppComponent} from './app.component';
 import {NavigationComponent} from './components/navigation/navigation.component';
@@ -15,6 +16,7 @@ import {SectionAboutComponent} from './components/main-components/about/section-
 import {SectionExperienceComponent} from './components/main-components/experience/section-experience/section-experience.component';
 import {SectionProjectsComponent} from './components/main-components/projects/section-projects/section-projects.component';
 import {SectionContactComponent} from './components/main-components/contact/section-contact/section-contact.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import {SectionContactComponent} from './components/main-components/contact/sect
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

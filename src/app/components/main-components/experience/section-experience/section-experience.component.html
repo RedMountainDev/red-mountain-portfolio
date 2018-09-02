@@ -3,7 +3,11 @@
     <h2 class=" heading-secondary">{{item.title}}</h2>
   </div>
   <div class="experience-content__container">
-    <div class="experience-content__pin" *ngFor="let i of item.areas">
+    <div class="experience-content__pin" [ngStyle]="{cursor: i.url ? 'pointer' : 'default'}" (click)="Navigate(i.url)"
+         matTooltip="{{i.description}}"
+         [matTooltipPosition]="'after'"
+         [matTooltipClass]="'tooltip'"
+         *ngFor="let i of item.areas">
       <img class="experience-content__pin-img" [src]="i.logo" alt="">
       <h3 class="experience-content__pin-text">{{i.name}}</h3>
     </div>
