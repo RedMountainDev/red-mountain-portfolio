@@ -6,6 +6,6 @@ import {IExperienceCategory} from '../../../../interfaces/IExperienceCategory';
 export const csharpCat: IExperienceCategory = {
   title: 'C#',
   areas: [
-    asp, csharp, dotnet
+    csharp, asp, dotnet
   ]
 };
