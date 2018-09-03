@@ -3,6 +3,7 @@ import {javascript} from './javascript';
 import {typescript} from './typescript';
 import {angular} from './angular';
 import {node} from './node';
+import {electron} from './electron';
 
 export const javascriptCat: IExperienceCategory = {
   title: 'JavaScript',
@@ -10,6 +11,7 @@ export const javascriptCat: IExperienceCategory = {
     javascript,
     typescript,
     angular,
+    electron,
     node
   ]
 };
