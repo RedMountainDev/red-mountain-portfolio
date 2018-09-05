@@ -1,0 +1,23 @@
+.contact-form {
+  margin: 3rem auto;
+  width: 40rem;
+  &__element {
+    display: block;
+  }
+  &__group {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__label {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  &__input {
+    width: 100%;
+  }
+  &__btn {
+    width: 10rem;
+    margin: auto;
+  }
+}
