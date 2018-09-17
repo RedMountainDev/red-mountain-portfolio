@@ -36,11 +36,11 @@
       @include nav-transition($color-fire-brick-dark-1);
     }
     &-projects {
-      @include nav-transition($color-secondary-1-2);
+      @include nav-transition($color-amber-light-2);
 
     }
     &-contact {
-      @include nav-transition($color-complement-0)
+      @include nav-transition($color-green)
     }
   }
 }
