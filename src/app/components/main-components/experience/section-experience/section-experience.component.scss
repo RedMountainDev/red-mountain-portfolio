@@ -5,25 +5,46 @@
 }
 
 .experience-content {
-  margin: 3rem 0;
+  margin: 3rem;
 
   &__heading {
     color: $color-white;
     background-color: $color-fire-brick-dark-1;
     width: 30rem;
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   &__container {
     background-color: $color-grey-light-1;
+    box-shadow: 5px 3px 3px rgba($color-black, 0.3);
+
+    @include respond(phone) {
+      box-shadow: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
   &__pin {
     margin: 2rem;
     min-width: 15rem;
+    width: 15rem;
     display: inline-block;
+
+    @include respond(phone) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex: 1;
+    }
 
     &-img {
       height: 15rem;
       min-height: 15rem;
+      width: 15rem;
+      min-width: 15rem;
+
     }
 
     &-text {

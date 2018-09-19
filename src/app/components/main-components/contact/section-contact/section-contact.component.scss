@@ -1,23 +1,64 @@
+@import "~src/assets/sass/utils/main-utils";
+
+:host {
+  padding: 1rem;
+}
+
 .contact-form {
   margin: 3rem auto;
-  width: 40rem;
+  width: 60rem;
+  border: 1px solid $color-grey-dark-1;
+  padding: 3rem 5rem;
+  background-color: $color-white;
+  box-shadow: 5px 3px 3px rgba($color-black, 0.3);
+
   &__element {
     display: block;
   }
   &__group {
+    position: relative;
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
   }
   &__label {
+    padding-left: 0.5rem;
     font-size: 1.6rem;
-    text-align: center;
   }
   &__input {
+    font-family: 'Raleway', sans-serif;
     width: 100%;
+    font-size: 1.5rem;
+    background-color: $color-white;
+    color: $color-black;
+    padding: 0.5rem 1rem;
+    line-height: 1.5;
+    border: 1px solid $color-grey-dark-1;
+    border-radius: 10px;
+    resize: none;
   }
   &__btn {
-    width: 10rem;
+    font-size: 1.6rem;
+    color: $color-green;
+    cursor: pointer;
+    width: 12rem;
     margin: auto;
+    transition: all 0.5s;
+    &:hover {
+      border: solid 1px transparent;
+      color: $color-white;
+      background-color: $color-green;
+    }
   }
+
+}
+
+.character-counter {
+  line-height: 1;
+  font-size: 1.4rem;
+  position: absolute;
+  right: 1.3rem;
+  bottom: 0.75rem;
+  z-index: 20;
+  color: $color-grey-dark-2;
 }

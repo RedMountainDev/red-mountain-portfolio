@@ -3,7 +3,12 @@
   height: 100%;
   overflow: auto;
 
+  @include respond(phone) {
+    padding: 0;
+  }
+
   &__header {
+    min-height: 8.8rem;
 
     &--primary {
       color: $color-white;
@@ -37,30 +42,43 @@
     &--about {
     }
     &--experience {
-      background-image: url('src/assets/images/backgrounds/emile-perron-190221-unsplash.jpg');
+      background: url('src/assets/images/backgrounds/emile-perron-190221-unsplash.jpg') right center;
       background-size: cover;
+
     }
     &--projects {
     }
     &--contact {
+      background-color: $color-black;
     }
   }
 
   &__overlay {
     min-height: 100%;
-    background-color: rgba($color-white, 0.3);
+    background-color: rgba($color-grey-dark-1, 0.7);
   }
-  &__paragraph {
-    margin: 4rem auto;
-    font-size: 2.4rem;
+  &__container {
+    margin: 3rem;
     line-height: 1.7;
     padding: 2.5rem;
-    background-color: $color-white;
     color: darken($color-grey-dark-2, 10);
-    border: 1px solid $color-grey;
-    border-radius: 1rem;
+    background-color: $color-white;
+    box-shadow: 5px 3px 3px rgba($color-black, 0.3);
+    @include respond(phone) {
+      box-shadow: none;
+
+    }
+
+    & h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      margin-bottom: 1.6rem;
+      text-align: center;
+    }
 
     & p {
+      font-size: 2.4rem;
+
       &:not(:last-child) {
         margin-bottom: 2.5rem;
       }
