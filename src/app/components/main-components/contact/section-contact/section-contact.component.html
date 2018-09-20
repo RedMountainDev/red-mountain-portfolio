@@ -4,21 +4,49 @@
     If you would like me to work on a project with you, please feel free to send it my way.
   </p>
 </div>
-<form class="contact-form">
+<form (ngSubmit)="onSubmit()" class="contact-form">
   <div class="contact-form__group">
-    <label class="contact-form__element contact-form__label" for="name">Name</label>
-    <input class="contact-form__element contact-form__input" id="name" type="text">
+    <div class="contact-form__label-group">
+      <label class="contact-form__element contact-form__label" for="name">Name</label>
+      <div class="contact-form__error-group" *ngIf="name.invalid && name.touched">
+        <div class="contact-form__error" *ngIf="name.errors.required">Name is required.</div>
+        <div class="contact-form__error" *ngIf="name.errors.minlength">Name must be longer than 3 characters.</div>
+      </div>
+    </div>
+    <input [(ngModel)]="formData.name" #name="ngModel"
+           class="contact-form__element contact-form__input"
+           required
+           minlength="3"
+           maxlength="40"
+           name="name"
+           id="name"
+           type="text">
   </div>
   <div class="contact-form__group">
-    <label class="contact-form__element contact-form__label" for="email">E-Mail</label>
-    <input class="contact-form__element contact-form__input" id="email" type="email">
+    <div class="contact-form__label-group">
+      <label class="contact-form__element contact-form__label" for="email">E-Mail</label>
+      <div class="contact-form__error-group" *ngIf="email.invalid && email.touched">
+        <div class="contact-form__error" *ngIf="email.errors.required">Email is required.</div>
+        <div class="contact-form__error" *ngIf="email.errors.email">Not a valid email.</div>
+      </div>
+    </div>
+    <input class="contact-form__element contact-form__input"
+           [(ngModel)]="formData.email" #email="ngModel" required
+           id="email" name="email" type="email" email="true">
   </div>
   <div class="contact-form__group">
-    <label class="contact-form__element contact-form__label" for="message">Your Idea</label>
-    <textarea class="contact-form__element contact-form__input" id="message" cols="30"
-              rows="10"></textarea>
-    <div class="character-counter">500</div>
+    <div class="contact-form__label-group">
+      <label class="contact-form__element contact-form__label" for="message">Your Idea</label>
+      <div class="contact-form__error-group" *ngIf="message.invalid && message.touched">
+        <div class="contact-form__error" *ngIf="message.errors.required">A message is required.</div>
+      </div>
+    </div>
+    <textarea
+      (input)="checkLength($event)" required class="contact-form__element contact-form__input"
+      [attr.maxlength]="textAreaMax" id="message" cols="30"
+      rows="10" [(ngModel)]="formData.message" #message="ngModel" name="message"></textarea>
+    <div class="character-counter">{{textAreaCharRemain}}</div>
   </div>
-  <input class="contact-form__element contact-form__input contact-form__btn" type="submit" value="Contact Me">
+  <button class="contact-form__element contact-form__btn" type="submit">Contact Me</button>
 </form>
 

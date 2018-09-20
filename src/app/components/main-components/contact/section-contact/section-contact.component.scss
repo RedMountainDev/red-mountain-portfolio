@@ -21,11 +21,29 @@
       margin-bottom: 2rem;
     }
   }
+  &__error-group {
+    display: inline-block;
+    color: red;
+    margin: 0 0.5rem;
+  }
+
+  &__error {
+    font-size: 1.2rem;
+  }
+
   &__label {
-    padding-left: 0.5rem;
+    display: inline-block;
+    margin: 0 0.5rem;
     font-size: 1.6rem;
   }
   &__input {
+    &::placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder,
+    &:-ms-input-placeholder {
+      color: $color-grey-dark-1;
+    }
+
     font-family: 'Raleway', sans-serif;
     width: 100%;
     font-size: 1.5rem;
@@ -33,16 +51,34 @@
     color: $color-black;
     padding: 0.5rem 1rem;
     line-height: 1.5;
-    border: 1px solid $color-grey-dark-1;
-    border-radius: 10px;
+    border: none;
+    border-bottom: 5px solid $color-grey-dark-1;
     resize: none;
+    outline: none;
+    transition: all 0.3s;
   }
+
+  .ng-valid[required], .ng-valid.required {
+
+    border-bottom: 5px solid $color-green;
+  }
+
+  .ng-invalid:not(.ng-untouched) {
+    border-bottom: 5px solid $color-fire-brick;
+
+  }
+
   &__btn {
+    font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
+    background-color: $color-white;
     color: $color-green;
     cursor: pointer;
     width: 12rem;
+    padding: 0.5rem 1rem;
+    line-height: 1.5;
     margin: auto;
+    border: solid 1px $color-grey-dark-1;
     transition: all 0.5s;
     &:hover {
       border: solid 1px transparent;

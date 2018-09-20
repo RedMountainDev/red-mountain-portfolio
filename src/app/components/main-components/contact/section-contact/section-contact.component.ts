@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {NgForm} from '@angular/forms';
+import {e} from '../../../../../../node_modules/@angular/core/src/render3';
 
 @Component({
   selector: 'app-section-contact',
@@ -7,9 +9,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionContactComponent implements OnInit {
 
-  constructor() { }
+  textAreaMax: number;
+  textAreaCharRemain: number;
+
+
+  formData = {
+    name: '',
+    email: '',
+    message: ''
+  };
+
+  constructor() {
+    this.textAreaMax = 500;
+    this.textAreaCharRemain = this.textAreaMax;
+  }
+
+  styleSetter(el) {
+    return el.invalid && (el.dirty || el.touched) ? 'contact-form__input--invalid' : (!el.dirty || !el.touched) ? '' : 'contact-form__input--valid';
+  }
 
   ngOnInit() {
+  }
+
+  onSubmit(form: NgForm) {
+
+  }
+
+  checkLength(e) {
+    this.textAreaCharRemain = this.textAreaMax - e.target.textLength;
   }
 
 }

@@ -17,6 +17,7 @@ import {SectionExperienceComponent} from './components/main-components/experienc
 import {SectionProjectsComponent} from './components/main-components/projects/section-projects/section-projects.component';
 import {SectionContactComponent} from './components/main-components/contact/section-contact/section-contact.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
     MatTooltipModule
