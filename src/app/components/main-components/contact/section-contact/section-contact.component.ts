@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {NgForm} from '@angular/forms';
-import {e} from '../../../../../../node_modules/@angular/core/src/render3';
 
 @Component({
   selector: 'app-section-contact',
@@ -22,10 +21,6 @@ export class SectionContactComponent implements OnInit {
   constructor() {
     this.textAreaMax = 500;
     this.textAreaCharRemain = this.textAreaMax;
-  }
-
-  styleSetter(el) {
-    return el.invalid && (el.dirty || el.touched) ? 'contact-form__input--invalid' : (!el.dirty || !el.touched) ? '' : 'contact-form__input--valid';
   }
 
   ngOnInit() {
