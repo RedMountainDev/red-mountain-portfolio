@@ -58,6 +58,9 @@
       padding: 0 3rem;
       flex: 1;
     }
+    @include respond(phone) {
+      padding: 0 1.5rem;
+    }
 
     &-welcome {
       @include nav-transition($color-midnight-blue);
