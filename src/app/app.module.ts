@@ -18,6 +18,8 @@ import {SectionProjectsComponent} from './components/main-components/projects/se
 import {SectionContactComponent} from './components/main-components/contact/section-contact/section-contact.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -39,7 +41,8 @@ import {FormsModule} from '@angular/forms';
     FormsModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
