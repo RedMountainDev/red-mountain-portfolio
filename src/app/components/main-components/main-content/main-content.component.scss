@@ -7,4 +7,11 @@
 
 .main {
   height: 100vh;
+
+  @include respond(tab-port) {
+    height: $main-content-height-tab-port;
+  }
+  @include respond(phone) {
+    height: $main-content-height-phone;
+  }
 }

@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
-import {log} from 'util';
+import {faGithubSquare, faFacebookSquare, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-navigation',
@@ -11,6 +10,9 @@ export class NavigationComponent implements OnInit {
 
 
   routerOptions = {exact: true};
+  githubIcon = faGithubSquare;
+  facebookIcon = faFacebookSquare;
+  linkedInIcon = faLinkedin;
 
   constructor() {
   }

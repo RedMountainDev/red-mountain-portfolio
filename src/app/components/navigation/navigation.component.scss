@@ -1,49 +1,84 @@
 @import "../../../assets/sass/utils/main-utils";
 
 :host {
-  width: 18rem;
-  height: 100vh;
+  width: 22rem;
   display: block;
-  align-items: center;
   background-color: $color-white;
   border-right: 1px solid $color-grey;
 
   @include respond(tab-port) {
-    height: 5rem;
     width: 100%;
     border-right: none;
   }
+
 }
 
 .navigation {
   width: 100%;
-
   @include respond(tab-port) {
-    height: 100%;
+    height: $navigation-height-tab-port;
     display: flex;
+    flex-direction: column;
+  }
+  @include respond(phone) {
+    height: $navigation-height-phone;
   }
 
-  &__logo-box {
-    padding: 2rem;
-    background-color: $color-grey-light-1;
-    border-bottom: 1px solid $color-grey;
-    @include respond(tab-port) {
-      width: 5rem;
-      padding: 0;
-    }
+  &__link {
+    outline: none;
+    font-size: 3rem;
+    margin: 0.3rem;
 
-    @include respond(phone) {
+    &--github {
+      color: $color-grey-dark-2;
+    }
+    &--facebook {
+      color: $facebook-blue;
+    }
+    &--linkedin {
+      color: $linkedin-blue;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+    margin: .5rem;
+
+    &--title {
+      font-weight: 500;
+      font-size: 2.3rem;
+
+    }
+    &--subtitle {
+      font-weight: 300;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    @include respond(tab-port) {
       display: none;
     }
-  }
-  &__logo-link {
-    outline: none;
+    &-box {
+      padding: 2rem;
+      background-color: $color-grey-light-1;
+      border-bottom: 1px solid $color-grey;
+
+      @include respond(tab-port) {
+        padding: 1rem;
+        justify-content: center;
+        display: flex;
+        border-bottom: 0;
+      }
+    }
   }
 
   &__list {
     list-style: none;
     @include respond(tab-port) {
       display: flex;
+      flex: 1;
       width: 100%;
     }
   }
@@ -62,6 +97,7 @@
       flex: 1;
     }
     @include respond(phone) {
+      font-size: 2rem;
       padding: 0 1.5rem;
     }
 

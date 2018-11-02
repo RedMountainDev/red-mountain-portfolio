@@ -2,13 +2,13 @@
   padding: 4rem;
   height: 100%;
   overflow: auto;
+  margin: auto;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     padding: 0;
   }
 
   &__header {
-    min-height: 8.8rem;
 
     &--primary {
       color: $color-white;
@@ -42,20 +42,27 @@
     &--about {
     }
     &--experience {
-      background: url('src/assets/images/backgrounds/emile-perron-190221-unsplash.jpg') right center;
+      background: url('src/assets/images/backgrounds/emile-perron-190221-unsplash_optimized.jpg') right center;
       background-size: cover;
 
     }
     &--projects {
+      background: url('src/assets/images/backgrounds/marvin-meyer-571072-unsplash_optimized.jpg') center center;
+      background-size: cover;
     }
     &--contact {
-      background-color: $color-black;
+      background: url('src/assets/images/backgrounds/rawpixel-665368-unsplash_optimized.jpg') center center;
+      background-size: cover;
     }
   }
 
   &__overlay {
     min-height: 100%;
     background-color: rgba($color-grey-dark-1, 0.7);
+
+    @include respond(tab-port) {
+      padding-bottom: 1rem;
+    }
   }
   &__container {
     margin: 3rem;
@@ -70,14 +77,14 @@
     }
 
     & h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       font-weight: 600;
       margin-bottom: 1.6rem;
       text-align: center;
     }
 
     & p {
-      font-size: 2.4rem;
+      font-size: 2rem;
 
       &:not(:last-child) {
         margin-bottom: 2.5rem;

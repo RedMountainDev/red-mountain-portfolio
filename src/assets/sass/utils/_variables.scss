@@ -45,3 +45,12 @@ $color-green-light-1: #54AD54;
 $color-green-light-2: #20A520;
 $color-green-dark-1: #006E00;
 $color-green-dark-2: #004C00;
+
+$facebook-blue: #4267b2;
+$linkedin-blue: #0077b5;
+
+//SIZES
+$navigation-height-phone: 15vh;
+$navigation-height-tab-port: 20vh;
+$main-content-height-phone: (100 - $navigation-height-phone) vh;
+$main-content-height-tab-port: (100 - $navigation-height-tab-port) vh;
