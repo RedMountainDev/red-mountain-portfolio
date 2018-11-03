@@ -9,12 +9,12 @@ import {certificationsCat} from './XpAreas/Certifications/certificationsCat';
 import {phpCat} from './XpAreas/php/phpCat';
 
 export const XpCategories: IExperienceCategory[] = [
+  certificationsCat,
   csharpCat,
   javascriptCat,
   cssCat,
   htmlCat,
   phpCat,
   databaseCat,
-  buildCat,
-  certificationsCat
+  buildCat
 ];
