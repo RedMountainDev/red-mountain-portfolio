@@ -57,8 +57,11 @@
 
   &__logo {
     width: 100%;
+    border-radius: 20rem;
+    overflow: hidden;
     @include respond(tab-port) {
-      display: none;
+      max-height: 12rem;
+      max-width: 12rem;
     }
     &-box {
       padding: 2rem;
