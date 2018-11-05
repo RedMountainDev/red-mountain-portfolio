@@ -4,7 +4,6 @@
   width: 22rem;
   display: block;
   background-color: $color-white;
-  border-right: 1px solid $color-grey;
 
   @include respond(tab-port) {
     width: 100%;
