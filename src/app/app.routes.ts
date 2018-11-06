@@ -12,7 +12,8 @@ const experienceRoute: Route = {component: ExperienceComponent, path: 'experienc
 const projectsRoute: Route = {component: ProjectsComponent, path: 'projects'};
 const contactRoute: Route = {component: ContactComponent, path: 'contact'};
 
-const mainRoutes: Routes = [aboutRoute, experienceRoute, projectsRoute, contactRoute];
+
+const mainRoutes: Routes = [aboutRoute, experienceRoute, projectsRoute, contactRoute, {path: '**', redirectTo: '/', pathMatch: 'full'}];
 
 export const routes: Routes = [
   {component: MainContentComponent, children: mainRoutes, path: ''}
