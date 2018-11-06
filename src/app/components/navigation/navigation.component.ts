@@ -20,4 +20,7 @@ export class NavigationComponent implements OnInit {
   ngOnInit() {
   }
 
+  navigate(url) {
+    window.location.href = url;
+  }
 }
