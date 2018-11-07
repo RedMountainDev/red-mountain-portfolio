@@ -41,7 +41,7 @@ export class SectionContactComponent implements OnInit {
 
     if (ngForm.valid) {
       this.textAreaCharRemain = this.textAreaMax;
-      this.http.post('http://localhost/mailer.php', this.formData, this.headers).subscribe(next => {
+      this.http.post('http://127.0.0.1:8000/v1/mailer', this.formData, this.headers).subscribe(next => {
         console.log(next);
       });
       ngForm.resetForm();
