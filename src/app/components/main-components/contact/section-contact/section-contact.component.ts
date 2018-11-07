@@ -13,9 +13,6 @@ export class SectionContactComponent implements OnInit {
   textAreaMax: number;
   textAreaCharRemain: number;
 
-  submitted = false;
-
-  list: any;
   headers: any;
 
   formData = {
