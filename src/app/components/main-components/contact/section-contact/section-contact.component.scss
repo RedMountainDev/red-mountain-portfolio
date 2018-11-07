@@ -5,6 +5,7 @@
 }
 
 .contact-form {
+  position: relative;
   margin: 3rem auto;
   width: 60rem;
   border: 1px solid $color-grey-dark-1;
@@ -101,4 +102,13 @@
   bottom: 0.75rem;
   z-index: 20;
   color: $color-grey-dark-2;
+}
+
+mat-progress-spinner {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }

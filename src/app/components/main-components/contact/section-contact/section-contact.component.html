@@ -49,5 +49,8 @@
     <div class="character-counter">{{textAreaCharRemain}}</div>
   </div>
   <button class="contact-form__element contact-form__btn" type="submit">Contact Me</button>
+  <mat-progress-spinner *ngIf="submitting" mode="indeterminate"></mat-progress-spinner>
 </form>
+
+
 
