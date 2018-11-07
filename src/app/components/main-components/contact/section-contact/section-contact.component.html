@@ -7,10 +7,11 @@
 <form (ngSubmit)="onSubmit(messageForm)" class="contact-form" #messageForm="ngForm">
   <div class="contact-form__group">
     <div class="contact-form__label-group">
-      <label class="contact-form__element contact-form__label" for="name">Name</label>
+      <label class="contact-form__element contact-form__label" for="name">Name*</label>
       <div class="contact-form__error-group" *ngIf="name.invalid && ( name.touched)">
         <div class="contact-form__error" *ngIf="name.errors.required">Name is required.</div>
         <div class="contact-form__error" *ngIf="name.errors.minlength">Name must be longer than 3 characters.</div>
+        <div class="contact-form__error" *ngIf="name.errors.maxlength">Name must not be more than 40 characters.</div>
       </div>
     </div>
     <input [(ngModel)]="formData.name" #name="ngModel"
@@ -24,7 +25,7 @@
   </div>
   <div class="contact-form__group">
     <div class="contact-form__label-group">
-      <label class="contact-form__element contact-form__label" for="email">E-Mail</label>
+      <label class="contact-form__element contact-form__label" for="email">E-Mail*</label>
       <div class="contact-form__error-group" *ngIf="email.invalid && ( email.touched)">
         <div class="contact-form__error" *ngIf="email.errors.required">Email is required.</div>
         <div class="contact-form__error" *ngIf="email.errors.email || email.errors.pattern">Not a valid email.</div>
@@ -38,6 +39,7 @@
   <div class="contact-form__group">
     <div class="contact-form__label-group">
       <label class="contact-form__element contact-form__label" for="message">Your Idea</label>
+      <label class="contact-form__element contact-form__label" for="message">Your Idea*</label>
       <div class="contact-form__error-group" *ngIf="message.invalid && (message.touched)">
         <div class="contact-form__error" *ngIf="message.errors.required">A message is required.</div>
       </div>
