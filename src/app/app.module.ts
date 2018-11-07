@@ -20,6 +20,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {HttpClientModule} from '@angular/common/http';
+import {ToastrModule} from 'ngx-toastr';
 
 
 @NgModule({
@@ -42,6 +43,11 @@ import {HttpClientModule} from '@angular/common/http';
     FormsModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut: 10000,
+      positionClass: 'toast-top-right',
+      preventDuplicates: true,
+    }),
     MatTooltipModule,
     FontAwesomeModule,
     HttpClientModule
