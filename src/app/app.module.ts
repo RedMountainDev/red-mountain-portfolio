@@ -17,11 +17,12 @@ import {SectionExperienceComponent} from './components/main-components/experienc
 import {SectionProjectsComponent} from './components/main-components/projects/section-projects/section-projects.component';
 import {SectionContactComponent} from './components/main-components/contact/section-contact/section-contact.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {HttpClientModule} from '@angular/common/http';
 import {ToastrModule} from 'ngx-toastr';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {NgxMaskModule} from 'ngx-mask';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
     ToastrModule.forRoot({
@@ -52,7 +54,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatTooltipModule,
     FontAwesomeModule,
     HttpClientModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
