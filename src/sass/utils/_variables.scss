@@ -50,7 +50,7 @@ $facebook-blue: #4267b2;
 $linkedin-blue: #0077b5;
 
 //SIZES
-$navigation-height-phone: 15vh;
+$navigation-height-phone: 16vh;
 $navigation-height-tab-port: 20vh;
-$main-content-height-phone: (100 - $navigation-height-phone) vh;
-$main-content-height-tab-port: (100 - $navigation-height-tab-port) vh;
+$main-content-height-phone: (100 - $navigation-height-phone);
+$main-content-height-tab-port: (100 - $navigation-height-tab-port);
