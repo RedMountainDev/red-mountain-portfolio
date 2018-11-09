@@ -67,12 +67,14 @@ export class SectionContactComponent implements OnInit {
   }
 
   onSubmit() {
-    this.submitting = true;
 
-    this.form.markAsTouched();
-    console.log(this.form.value);
+
+    (<any>Object).values(this.form.controls).forEach(control => {
+      control.markAsTouched();
+    });
 
     if (this.form.valid) {
+      this.submitting = true;
       this.form.disable();
       this.textAreaCharRemain = this.textAreaMax;
       this.http.post('http://inspire-me-api.redmountaindev.co.za/v1/mailer', this.form.value, this.headers)
